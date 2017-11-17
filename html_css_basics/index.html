@@ -1,0 +1,85 @@
+<!-- DOCTYPE tells the browser which version of HTML this document is using.
+     HTML5 in this case. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The `title` tag is used to set the name of page as is displayed
+         in the tab. -->
+    <title>HTML & CSS: Basics</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <!-- The `nav` is used to described content with links that allows the user
+         to visit different pages of your web application. -->
+    <nav>
+      <a href="http://nyan.cat/fiesta">Back</a>
+      <a href="">Boards</a>
+      <a href="">Profile</a>
+      <!-- The `action` attribute is similar to the `href` of a `a` tag. It tells
+           browser where the data of the form should be sent. -->
+      <form class="search-field" action="#" method="GET">
+        <!-- An `input` tag inside of a form is used to get data from a user's
+             interaction. -->
+        <input name="query" placeholder="Search query here..." />
+        <!-- The input of type submit shows button that when pressed will
+             submit the form. In other words, it'll send the data contained
+             to the URL specified in the `action` attribute of the ancestor form
+             tag. -->
+        <input type="submit" value="Search" />
+      </form>
+    </nav>
+
+    <main>
+      <!-- The `id` attribute works for all elements. It is a unique identifier.
+           No id should ever be duplicated on a page. This can cause unexpected
+           behaviour when with JavaScript or CSS. -->
+      <section id="starred-boards">
+        <h1 style="color: deepskyblue;">Starred Boards</h1>
+
+        <!-- Here we're using a `class` attribute instead of a `id`, because it
+             this `ul` in more generic way. There will be more than one `board-list`
+             on the page. We'll use use this class to select the element when styling. -->
+        <ul class="board-list">
+          <li>Management</li>
+          <li
+            style="background-image: url(https://i.imgur.com/4AiXzf8.jpg);"
+          >
+            Learning to Hack
+          </li>
+        </ul>
+      </section>
+
+      <section id="personal-boards">
+        <h1>Personal Boards</h1>
+
+        <ul class="board-list">
+          <li>Management</li>
+          <li
+            style="background-image: url(https://i.imgur.com/4AiXzf8.jpg);"
+          >
+            Learning to Hack
+          </li>
+          <li>Learning to Code</li>
+          <li
+            style="background-image: url(https://i.imgur.com/BKsGPGJ.gif);"
+          >
+            My ideas
+          </li>
+          <li>Create New Board...</li>
+        </ul>
+      </section>
+    </main>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- bump -->
