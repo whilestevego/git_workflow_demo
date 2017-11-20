@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Features 2 Layout</title>
+    <link rel="stylesheet" href="index.css" type="text/css" media="screen" charset="utf-8">
+    <style>
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+      }
+
+      main div:first-child {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+      }
+
+      main div:nth-child(2) {
+        margin-right: 7.5px;
+      }
+
+      main div:nth-child(3) {
+        margin-left: 7.5px;
+      }
+
+      main div {
+        flex-grow: 1;
+        flex-basis: calc(50% - 7.5px);
+        /* `calc` is a CSS pseudo-function that can be to dynamically calculate
+           values combining even different units together. */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>

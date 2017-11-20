@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Four Columns Layout</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+      main { /* <-- Sets main as the flex container */
+        display: flex;
+        justify-content: space-between;
+        padding: 20px; /* 👈 margin-top & margin-bottom == 20px
+        while margin-left & margin-right == 0 */
+      }
+
+      main > div {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>

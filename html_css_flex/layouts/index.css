@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  /* The box-sizing properties controls what is included in the calcution
+  of the size of an elements box. By default, it is set to `content-box`. This means
+  that only the content of an element is included in the percentage calculation.
+  When it is set to `border-box`, the padding, the border and content are all part
+  of the calculation of the size of the box.
+
+  div {
+    height: 40px;
+    border-width: 5px;
+    padding: 10px;
+    margin: 15px;
+  }
+  `content-box`
+  actual height = 40px + 5px * 2 + 10px * 2 + 15px * 2 = 100px
+  height of content = 40px
+
+  `border-box`
+  actual height = 40px + 15px * 2 = 70px
+  height of content =  50px - 5px * 2 - 10px * 2 = 20px
+
+  👆 same for width
+  */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+main div {
+  background-color: grey;
+  border-radius: 5px;
+}

@@ -85,7 +85,17 @@ main {
   margin: 15px;
 }
 
+/* Trick to display boxes surrounding all elements */
 
+* {
+  /*border: thin dotted pink !important;*/
+
+  /* You can create colors using `rgba().
+     It takes 4 values from 0-255 then 0-1: red, green, blue and alpha. alpha
+     represents the opacity of the color. How transparent it is.
+  */
+  /*background-color: rgba(150, 150, 0, 0.1) !important;*/
+}
 
 
 
