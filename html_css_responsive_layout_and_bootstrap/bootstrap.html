@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="js/jquery-3.2.1.slim.min.js" charset="utf-8"></script>
+    <script src="js/popper.min.js" charset="utf-8"></script>
+    <!-- `defer` tells the browser to load the file linked in the script tag
+         only once the entire HTML has finished loading. -->
+    <script defer src="js/bootstrap.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+      <!-- The expand/collapse toggler button is a Boostrap feature
+           that relies on JavaScript behind the scenes. `data-toggle="collapse"`
+           html attributes tells Bootstrap's JavaScript that this is
+           can expand or collapse another element. That other element is
+           chosen with the `data-target` html attribute. Its value is a
+           CSS selector that selects the element we want to expand or collapse.
+      -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link active">Home</a>
+          <a class="nav-item nav-link">Link</a>
+          <a class="nav-item nav-link disabled">Disabled</a>
+          <a class="nav-item nav-link">Dropdown</a>
+        </div>
+        <form class="form-inline">
+          <input class="form-control mr-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Hello, World!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more 👉</a>
+        </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <button type="button" class="btn btn-secondary">
+          View details >>
+        </button>
+      </div>
+
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <button type="button" class="btn btn-secondary">
+          View details >>
+        </button>
+      </div>
+
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        <button type="button" class="btn btn-secondary">
+          View details >>
+        </button>
+      </div>
+    </div>
+
+    <hr />
+    <footer>
+      <p>Company ©</p>
+    </footer>
+  </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+<!-- bump -->
